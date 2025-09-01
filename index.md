@@ -7,6 +7,8 @@ author_profile: true
 
 大家好！我是王俊桥，欢迎来到我的个人主页～
 
+我是一名工程能力非常强悍的全栈工程师，为了保研和VIP抗衡不得不发表一些垃圾论文，还请大家见谅本人的学术水平。我活跃在很多开源社区，包括MindSpore, Ascned, vLLM 和 SGLang，从事国产化硬件加速适配相关的研究。欢迎在阅读我的介绍后联系我，我很乐于交朋友。我的职业兴趣是从事和AI和医疗相关的研究，不过我的个人研究兴趣更喜欢研究强化学习对世界造成的巨大影响。
+
 # About Me 👋
 
 🎓 Hello! I am an undergraduate student majoring in **Computer Science and Technology** at **Sichuan University – Pittsburgh Institute**, where I receive a fully international, English-based education. During the winter recess period, I had the opportunity to spend **a month** at the **University of Texas at Austin** as part of an exchange program.   
