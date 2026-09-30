@@ -1,0 +1,42 @@
+{
+  "layout": "home.njk",
+  "name": "Junqiao Wang",
+  "chineseName": "王俊桥",
+  "role": "AI for Healthcare Researcher",
+  "affiliation": "Sichuan University · Pittsburgh Institute",
+  "location": "Chengdu / Shanghai, China",
+  "avatar": "/assets/profile.jpg",
+  "email": "tlmsq@outlook.com",
+  "links": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=fKuqskgAAAAJ&hl=zh-CN"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/TiramisuQiao"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0009-0005-4298-5885"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "About",
+      "url": "/"
+    },
+    {
+      "label": "Research",
+      "url": "/research/"
+    },
+    {
+      "label": "Publications",
+      "url": "/publications/"
+    },
+    {
+      "label": "Activities",
+      "url": "/activities/"
+    }
+  ]
+}

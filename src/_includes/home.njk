@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <meta name="theme-color" content="#fafaf7">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <title>{{ title }}</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="terminal-logo" href="/" aria-label="MICLAB — home">
+        <span class="terminal-prompt" aria-hidden="true">❯</span>
+        <pre aria-hidden="true">╔╦╗╦╔═╗╦  ╔═╗╔╗ 
+║║║║║  ║  ╠═╣╠╩╗
+╩ ╩╩╚═╝╩═╝╩ ╩╚═╝</pre>
+        <span class="terminal-cursor" aria-hidden="true">▌</span>
+      </a>
+      <nav aria-label="Main navigation">
+        {% for item in navigation %}<a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
+      </nav>
+    </div>
+  </header>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Personal information">
+      <div class="portrait-wrap"><img class="portrait" src="{{ avatar }}" alt="Portrait of {{ name }}" width="200" height="200"></div>
+      <h1>{{ name }}</h1>
+      <p class="chinese-name" lang="zh-CN">{{ chineseName }}</p>
+      <p class="profile-role">{{ role }}</p>
+      <p class="affiliation">{{ affiliation }}</p>
+      <p class="location"><span aria-hidden="true">⌖</span> {{ location }}</p>
+      <div class="profile-links">
+        <a href="mailto:{{ email }}"><span aria-hidden="true">@</span> Email <span class="arrow" aria-hidden="true">↗</span></a>
+        {% for link in links %}<a href="{{ link.url }}"><span aria-hidden="true">{% if link.label == 'Google Scholar' %}⌘{% elif link.label == 'GitHub' %}⌥{% else %}◎{% endif %}</span> {{ link.label }} <span class="arrow" aria-hidden="true">↗</span></a>{% endfor %}
+      </div>
+      <p class="profile-note"><span class="status-dot" aria-hidden="true"></span> Open to thoughtful collaborations</p>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div class="intro-label"><span></span> PERSONAL / ACADEMIC</div>
+      <p class="tagline">{{ tagline }}</p>
+      <article class="prose">{{ content | safe }}</article>
+      <footer><span>© {{ '' | year }} {{ name }}</span><a href="#top">Back to top ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>
