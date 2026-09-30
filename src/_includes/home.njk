@@ -18,10 +18,7 @@
     <div class="header-inner">
       <a class="terminal-logo" href="/" aria-label="MICLAB — home">
         <span class="terminal-prompt" aria-hidden="true">❯</span>
-        <pre aria-hidden="true">╔╦╗╦╔═╗╦  ╔═╗╔╗ 
-║║║║║  ║  ╠═╣╠╩╗
-╩ ╩╩╚═╝╩═╝╩ ╩╚═╝</pre>
-        <span class="terminal-cursor" aria-hidden="true">▌</span>
+        <span class="terminal-typewriter" aria-hidden="true"><span class="terminal-text">MICLAB</span><span class="terminal-cursor">▌</span></span>
       </a>
       <nav aria-label="Main navigation">
         {% for item in navigation %}<a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
